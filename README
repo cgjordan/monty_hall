@@ -14,4 +14,4 @@ Switching doors gives you a 2/3 chance to win the car.
 For more information, see:
 https://en.wikipedia.org/wiki/Monty_Hall_problem
 
-A Rust compiler can be obtained from https://rust-lang.org/ for Windows, Mac, and Linux.
+A Rust compiler can be obtained from https://www.rust-lang.org/ for Windows, Mac, and Linux.
