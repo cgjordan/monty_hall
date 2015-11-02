@@ -6,7 +6,7 @@ fn main() {
     let mut stay = 0;
     let mut switch = 0;
     let count = 1000000;
-    let talkative = false; // Lots of output slows down the program
+    let talkative = false; // Lots of output slows down the program.
     
     for game in 0..count {
         if talkative { println!("Game number {}", game+1); }
@@ -17,6 +17,7 @@ fn main() {
         let pick = rand::thread_rng().gen_range(1, 4);
         if talkative { println!("  The player picks door #{}.", pick); }
         
+        // There might be a better way to do this.
         let mut open;
         loop {
             open = rand::thread_rng().gen_range(1, 4);
@@ -24,6 +25,7 @@ fn main() {
         }
         if talkative { println!("  The host opens door #{}, revealing a goat behind it.", open); }
         
+        // There's got to be a better way to do this.
         let mut offer;
         loop {
             offer = rand::thread_rng().gen_range(1, 4);
@@ -38,8 +40,8 @@ fn main() {
             switch += 1;
             if talkative { println!("  The door the host offered was the car!"); }
         } else {
-            // The game is a scam and there is no car.
-            panic!();
+            // No-win scenario.
+            panic!("Kobayashi_Maru");
         }
     }
     
