@@ -15,3 +15,11 @@ For more information, see:
 https://en.wikipedia.org/wiki/Monty_Hall_problem
 
 A Rust compiler can be obtained from https://www.rust-lang.org/ for Windows, Mac, and Linux.
+
+
+
+Example output of the program:
+Finished simulating 1000000 games.
+Number of cars won by staying:   332741
+Number of cars won by switching: 667259
+
